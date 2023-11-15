@@ -1,6 +1,6 @@
 import { useLoaderData } from "@remix-run/react";
 import Collection from "~/components/collections";
-import { collectionQueryInHomePage } from "~/lib/query";
+import { collectionQuery, collectionQueryInHomePage } from "~/lib/query";
 import { getClient } from "~/lib/santity";
 
 interface LoaderData {
@@ -8,7 +8,7 @@ interface LoaderData {
 }
 
 export const loader = async () => {
-  const collections: any = await getClient().fetch(collectionQueryInHomePage);
+  const collections: any = await getClient().fetch(collectionQuery);
 
   return { collections };
 };
