@@ -6,12 +6,8 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
-  isRouteErrorResponse,
-  useMatches,
-  useRouteError,
 } from "@remix-run/react";
 import stylesheet from "~/tailwind.css";
-import { useNonce } from "@shopify/hydrogen";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },

@@ -1,6 +1,6 @@
 import { useLoaderData } from "@remix-run/react";
 import Collection from "~/components/collections";
-import { collectionQuery, collectionQueryInHomePage } from "~/lib/query";
+import { collectionQuery } from "~/lib/query";
 import { getClient } from "~/lib/santity";
 
 interface LoaderData {
