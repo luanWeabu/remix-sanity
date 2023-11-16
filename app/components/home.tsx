@@ -11,7 +11,7 @@ export default function Collection({
   return (
     <main className="container mx-auto grid grid-cols-1 divide-y divide-blue-100">
       {collections?.length > 0 ? (
-        collections.map((collection) => (
+        collections.map((collection: SanityDocument) => (
           <Link
             key={collection._id}
             to={collection.slug.current}
