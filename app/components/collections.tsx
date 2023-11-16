@@ -18,7 +18,6 @@ export default function Collection({
   const filterBannerItems: BannerModule[] = filterCollections[0].bannerItems;
   const itemBannerCollection: BannerGrid = filterCollections[0];
   const filterViewAllLink = [itemBannerCollection.viewAllLink[0]];
-  console.log(collectionDetail);
 
   return (
     <main className="container mx-auto">
