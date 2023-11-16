@@ -6,8 +6,6 @@ export default function Collection({
 }: {
   collections: SanityDocument[];
 }) {
-  console.log(collections);
-
   return (
     <main className="container mx-auto grid grid-cols-1 divide-y divide-blue-100">
       {collections?.length > 0 ? (
