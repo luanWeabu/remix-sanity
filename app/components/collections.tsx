@@ -1,6 +1,6 @@
 import { Link } from "@remix-run/react";
 import imageUrlBuilder from "@sanity/image-url";
-import { BannerGrid, BannerModule } from "~/types/sentity_type";
+import { BannerGrid, BannerModule, ViewAllLink } from "~/types/sentity_type";
 import { projectId, dataset } from "../lib/santity";
 
 interface CollectionProps {
@@ -17,7 +17,9 @@ export default function Collection({
   const filterCollections: BannerGrid[] = [collections[0]];
   const filterBannerItems: BannerModule[] = filterCollections[0].bannerItems;
   const itemBannerCollection: BannerGrid = filterCollections[0];
-  const filterViewAllLink = [itemBannerCollection.viewAllLink[0]];
+  const filterViewAllLink: ViewAllLink[] = [
+    itemBannerCollection.viewAllLink[0],
+  ];
 
   return (
     <main className="container mx-auto">
