@@ -5,13 +5,9 @@ import { projectId, dataset } from "../lib/santity";
 
 interface CollectionProps {
   collections: BannerGrid[];
-  collectionDetail: Store[];
 }
 
-export default function Collection({
-  collections,
-  collectionDetail,
-}: CollectionProps) {
+export default function Collection({ collections }: CollectionProps) {
   const builder = imageUrlBuilder({ projectId, dataset });
 
   const filterCollections: BannerGrid[] = [collections[0]];

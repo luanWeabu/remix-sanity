@@ -1,7 +1,5 @@
 import { createClient } from "@sanity/client";
 import type { SanityClient } from "@sanity/client";
-
-// Copy these from your Studio's sanity.config.ts
 export const projectId = "9nq18xri";
 export const dataset = "production";
 export const apiVersion = "2023-07-01";
